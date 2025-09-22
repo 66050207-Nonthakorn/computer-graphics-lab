@@ -2,5 +2,9 @@
   "cmake.useCMakePresets": "always",
   "cmake.generateBeforeBuild": true,
   "cmake.configureOnOpen": true,
-  "C_Cpp.default.configurationProvider": "ms-vscode.cmake-tools"
+  "C_Cpp.default.configurationProvider": "ms-vscode.cmake-tools",
+  "files.associations": {
+    "*.glsl": "glsl",
+    "vector": "cpp"
+  }
 }
