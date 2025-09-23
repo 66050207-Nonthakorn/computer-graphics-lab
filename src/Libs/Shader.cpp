@@ -92,15 +92,15 @@ void Shader::CompileShaders(const char* vertexCode, const char* fragmentCode)
         return;
     }
 
-    glValidateProgram(shader);
-    glGetProgramiv(shader, GL_VALIDATE_STATUS, &result);
-
-    if (!result)
-    {
-        glGetProgramInfoLog(shader, sizeof(elog), NULL, elog);
-        printf("Error validating program: '%s'\n", elog);
-        return;
-    }
+//     glValidateProgram(shader);
+//     glGetProgramiv(shader, GL_VALIDATE_STATUS, &result);
+//
+//     if (!result)
+//     {
+//         glGetProgramInfoLog(shader, sizeof(elog), NULL, elog);
+//         printf("Error validating program: '%s'\n", elog);
+//         return;
+//     }
 }
 
 void Shader::AddShader(GLuint theProgram, const char* shaderCode, GLenum shaderType)
